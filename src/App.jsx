@@ -1,5 +1,12 @@
-import { Title, Botao, Container } from './styles'
-import './styles.css'
+import { Title, 
+         Botao, 
+         Container, 
+         TitleBotao, 
+         Section 
+        } 
+        from './styles'
+
+import './global.css'
 
 
 
@@ -8,21 +15,17 @@ export default function App() {
    
    <Container>
     
-    <section>
-        <h2>Compartilhe seu #rocketcard</h2>
+    <Section>
+        <TitleBotao>Compartilhe seu #rocketcard</TitleBotao>
+    </Section>
 
-
-
-
-    </section>
-
-     <section>   
+     <Section>   
 
      <Title>Customizar Rocketcard</Title>
 
      <Botao>Gerar background</Botao>
 
-     </section>
+     </Section>
 
      </Container>
    

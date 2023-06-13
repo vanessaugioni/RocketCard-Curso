@@ -14,6 +14,21 @@
 
 import styled from "styled-components";
 
+export const Section = styled.section ` 
+  width: 100%;
+  height: 100vh;
+  
+
+`; 
+
+export const TitleBotao = styled.h2`
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: "Prompt", sans-serif;
+`;
+
 export const Title = styled.h2`
   color: #ffff;
   font-size: 20px;
@@ -37,10 +52,8 @@ export const Botao = styled.button`
 `;
 
 export const Container = styled.main`
-width: 100%;
-height: 100vh;
- display: flex; 
-
-
-
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  
 `;
