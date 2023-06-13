@@ -1,6 +1,10 @@
+import { Title } from './styles'
 
-function App() {
-  return
+
+export default function App() {
+  return (
+    <Title>Vanessa</Title>
+  )
 }
 
-export default App
+
