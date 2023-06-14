@@ -120,6 +120,19 @@ export const Article = styled.article`
       border-radius: 50px;
       background-color: gray;
 
+      ul {
+        display: flex; 
+      }
+
+      img {
+        width: 20.79px;
+        height: 20.79px; 
+        border:none;
+
+      }
+
+
+
       /* p {
         font-family: "Prompt", sans-serif;
         font-size: 16px;

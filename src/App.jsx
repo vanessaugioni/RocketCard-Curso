@@ -1,5 +1,5 @@
 import { Botao, Container, Article } from "./styles";
-import { LogoRock } from "./assets/export";
+import { LogoRock, Pessoa1, Pessoa2, Predio, Localizacao, Repositorio } from "./assets/export";
 import "./global.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -31,16 +31,39 @@ export default function App() {
           </header>
 
           <section>
-          <img src={user.avatar_url} alt="" /> 
+            <img src={user.avatar_url} alt="" />
 
             <div>
-              <p>{user.followers}</p>
-              <p>{user.following}</p>
-              <p>{user.public_repos}</p>
-              <p>{user.company}</p>
-              <p>{user.location}</p>
-            </div>
+          
+            <ul>
+                <img src={Pessoa1} alt="" />
+                <span>{user.followers}</span>
+                <p>Seguidores</p>
+            </ul> 
 
+              <ul>
+                 <img src={Pessoa2} alt="" />
+                 <span>{user.following}</span>
+                 <p>Seguindo</p>
+              </ul>
+
+              <ul>
+                 <img src={Repositorio} alt="" />
+                 <span>{user.public_repos}</span>
+                 <p>Repositórios</p>
+              </ul>
+
+              <ul>
+                 <img src={Predio} alt="" />
+                 <span>{user.company}</span>
+              </ul>
+
+              <ul>
+                 <img src={Localizacao} alt="" />
+                 <span>{user.location}</span>
+              </ul>
+              
+            </div>
           </section>
 
           <footer>
