@@ -18,9 +18,9 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   // Corpo do projeto ("Body")
+  display: flex;
   width: 100%;
   height: 100vh;
-  display: flex;
 
   section.section1 {
     width: 100%;
@@ -62,6 +62,9 @@ export const Container = styled.main`
 `;
 
 export const Article = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 438px;
   height: 693px;
   background: #1e1e1e;
@@ -78,7 +81,7 @@ export const Article = styled.article`
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 
     div {
       display: flex;
@@ -106,63 +109,81 @@ export const Article = styled.article`
     }
   }
 
-  section {
-    img {
+  section.main {
+    display: flex;
+    justify-content: flex-end;
+    border: 2px red solid;
+    overflow: hidden;
+
+    img.perfil {
+      position: relative;
+      left: 4rem;
       width: 355px;
       height: 350px;
       border-radius: 100%;
       border: 10px solid #8257e5;
     }
+  }
+`;
 
-    div {
-      width: 195.5px;
-      height: 194.7px;
-      border-radius: 50px;
-      background-color: gray;
+export const Card = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 1.7rem;
+  margin-right: 200px;
+  margin-top: 220px;
 
-      ul {
-        display: flex; 
-      }
+  background: linear-gradient(
+    180deg,
+    #000000 3.65%,
+    rgba(70, 69, 69, 0.72) 53.65%,
+    rgba(62, 56, 56, 0.42) 100%
+  ); // cor em degrade
 
-      img {
-        width: 20.79px;
-        height: 20.79px; 
-        border:none;
+  width: 190px;
+  height: 185px;
+  border-radius: 50px;
+  background-color: gray;
 
-      }
+  img {
+    width: 20.79px;
+    height: 20.79px;
+    border: none;
+  }
+`;
 
+export const Row = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "Prompt";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.1rem;
+  color: #ffffff;
+`;
 
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+ 
 
-      /* p {
-        font-family: "Prompt", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #FFFFFF;
-      } */
-    }
+  img {
+    margin-top: 0.5rem;
+    width: 28px;
+    height: 34px;
   }
 
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
-
-    img {
-      margin-top: 0.5rem;
-      width: 28px;
-      height: 34px;
-    }
-
-    span {
-      font-family: "Prompt", sans-serif;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      color: #ffffff;
-    }
+  span {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
   }
 `;
 

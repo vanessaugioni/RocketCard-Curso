@@ -1,4 +1,4 @@
-import { Botao, Container, Article } from "./styles";
+import { Botao, Container, Article, Card, Footer, Row } from "./styles";
 import { LogoRock, Pessoa1, Pessoa2, Predio, Localizacao, Repositorio } from "./assets/export";
 import "./global.css";
 import axios from "axios";
@@ -30,48 +30,48 @@ export default function App() {
             <span>birobirobiro</span>
           </header>
 
-          <section>
-            <img src={user.avatar_url} alt="" />
+          <section className="main">
+            <img className="perfil" src={user.avatar_url} alt="" />
 
-            <div>
+            <Card>
           
-            <ul>
+            <Row>
                 <img src={Pessoa1} alt="" />
                 <span>{user.followers}</span>
                 <p>Seguidores</p>
-            </ul> 
+            </Row> 
 
-              <ul>
+              <Row>
                  <img src={Pessoa2} alt="" />
                  <span>{user.following}</span>
                  <p>Seguindo</p>
-              </ul>
+              </Row>
 
-              <ul>
+              <Row>
                  <img src={Repositorio} alt="" />
                  <span>{user.public_repos}</span>
                  <p>Repositórios</p>
-              </ul>
+              </Row>
 
-              <ul>
+              <Row>
                  <img src={Predio} alt="" />
                  <span>{user.company}</span>
-              </ul>
+              </Row>
 
-              <ul>
+              <Row>
                  <img src={Localizacao} alt="" />
                  <span>{user.location}</span>
-              </ul>
+              </Row>
               
-            </div>
+            </Card>
           </section>
 
-          <footer>
+          <Footer>
             <div>
               <img src={LogoRock} alt="imagem" />
             </div>
             <span>ROCKETCARD</span>
-          </footer>
+          </Footer>
         </Article>
       </section>
 
