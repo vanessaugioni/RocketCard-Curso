@@ -82,6 +82,8 @@ export const Article = styled.article`
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+    margin-top:1rem; 
+    margin-left:1rem; 
 
     div {
       display: flex;
@@ -112,8 +114,8 @@ export const Article = styled.article`
   section.main {
     display: flex;
     justify-content: flex-end;
-    border: 2px red solid;
     overflow: hidden;
+    margin-bottom:3rem; 
 
     img.perfil {
       position: relative;
@@ -170,6 +172,9 @@ export const Footer = styled.footer`
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  justify-content: flex-end;
+  padding-right: 1rem ; 
+  margin-bottom: 1rem ; 
  
 
   img {
