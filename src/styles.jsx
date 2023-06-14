@@ -14,28 +14,147 @@
 
 import styled from "styled-components";
 
-export const Section = styled.section ` 
+// ------------------------------------------------------------
+
+export const Container = styled.main`
+  // Corpo do projeto ("Body")
   width: 100%;
   height: 100vh;
-  
+  display: flex;
 
-`; 
+  section.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-left: 25rem;
 
-export const TitleBotao = styled.h2`
-  color: #ffff;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  font-family: "Prompt", sans-serif;
+    h1 {
+      color: #ffff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23px;
+      margin-left: 5rem;
+      margin-bottom: 1.5rem;
+      font-family: "Prompt", sans-serif;
+    }
+  }
+
+  section.section2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10em;
+
+    h1 {
+      color: #fff;
+      font-size: 20px;
+      font-family: "Prompt", sans-serif;
+      line-height: 30px;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+  }
 `;
 
-export const Title = styled.h2`
-  color: #ffff;
-  font-size: 20px;
-  font-family: "Prompt", sans-serif;
-  line-height: 30px;
-  font-weight: 400;
+export const Article = styled.article`
+  width: 438px;
+  height: 693px;
+  background: #1e1e1e;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #000000;
+  border-top-width: 27px;
+  border-bottom-width: 27px;
+  border-left-width: 15px;
+  border-right-width: 15px;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: none;
+      border: 1px #fff solid;
+      border-radius: 100px;
+      width: 55px;
+      height: 55px;
+    }
+
+    img {
+      margin-top: 0.5rem;
+      width: 30px;
+      height: 37px;
+    }
+
+    span {
+      font-family: "Prompt", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+  }
+
+  section {
+    img {
+      width: 355px;
+      height: 350px;
+      border-radius: 100%;
+      border: 10px solid #8257e5;
+    }
+
+    div {
+      width: 195.5px;
+      height: 194.7px;
+      border-radius: 50px;
+      background-color: gray;
+
+      /* p {
+        font-family: "Prompt", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #FFFFFF;
+      } */
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    img {
+      margin-top: 0.5rem;
+      width: 28px;
+      height: 34px;
+    }
+
+    span {
+      font-family: "Prompt", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+  }
 `;
+
+//--------------------------------------------
+// Estilização BOTÃO
 
 export const Botao = styled.button`
   background-color: #000000;
@@ -49,11 +168,4 @@ export const Botao = styled.button`
   font-weight: 400;
   line-height: 23px;
   font-family: "Prompt", sans-serif;
-`;
-
-export const Container = styled.main`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  
 `;
