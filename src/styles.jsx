@@ -136,12 +136,15 @@ export const Card = styled.div`
   margin-right: 200px;
   margin-top: 220px;
 
+
   background: linear-gradient(
     180deg,
     #000000 3.65%,
-    rgba(70, 69, 69, 0.72) 53.65%,
+    rgba(70, 69, 69, 0.72)  53.65% ,
     rgba(62, 56, 56, 0.42) 100%
   ); // cor em degrade
+
+  
 
   width: 190px;
   height: 185px;

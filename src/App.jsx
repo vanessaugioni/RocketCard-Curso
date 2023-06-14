@@ -27,7 +27,7 @@ export default function App() {
             <div>
               <img src={LogoRock} alt="imagem" />
             </div>
-            <span>birobirobiro</span>
+            <span>vanessa_ugioni</span>
           </header>
 
           <section className="main">
