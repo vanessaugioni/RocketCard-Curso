@@ -101,8 +101,8 @@ export default function App() {
         <Botao onClick={getColors}>Gerar background
         </Botao>
 
-        {/* <p>{number}</p>
-        <button onClick={handleCounter}>contar numero</button> */}  
+         {/* <p>{number}</p>
+        <button onClick={handleCounter}>contar numero</button>  */}
 
       </section>
     </Container>
