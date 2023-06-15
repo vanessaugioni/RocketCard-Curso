@@ -9,20 +9,30 @@ export default function App() {
 
   useEffect(() => {
     axios
-      .get("https://api.github.com/users/vanessaugioni")
+      .get("https://api.github.com/users/vanessaugioni")  // link da API do GitHub
       .then((response) => setUser(response.data))
       .catch((error) => console.log(error))
       .finally(console.log("dentro do finaly"));
   }, []);
 
-  console.log(user, "user");
+
+  const [color, setColor] = useState('yellow') 
+
+  function getColors() {
+    const array = ['#19b5a5', '#ff0048', '#5e5473', '##a9f04d'];
+    const randomNumber = Math.floor(Math.random() * array.length); 
+    const result = array[randomNumber]; 
+    setColor(result)
+
+} 
+
 
   return (
     <Container>
       <section className="section1">
         <h1>Compartilhe seu #rocketcard</h1>
 
-        <Article>
+        <Article borderColor={color} >
           <header>
             <div>
               <img src={LogoRock} alt="imagem" />
@@ -78,7 +88,9 @@ export default function App() {
       <section className="section2">
         <h1>Customizar Rocketcard</h1>
 
-        <Botao>Gerar background</Botao>
+        <Botao onClick={getColors}>Gerar background
+        </Botao>
+
       </section>
     </Container>
   );

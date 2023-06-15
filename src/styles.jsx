@@ -70,7 +70,7 @@ export const Article = styled.article`
   background: #1e1e1e;
   border-radius: 50px;
   border-style: solid;
-  border-color: #000000;
+  border-color: ${(props) => props.borderColor}; 
   border-top-width: 27px;
   border-bottom-width: 27px;
   border-left-width: 15px;
@@ -140,7 +140,7 @@ export const Card = styled.div`
   background: linear-gradient(
     180deg,
     #000000 3.65%,
-    rgba(70, 69, 69, 0.72)  53.65% ,
+    rgba(70, 69, 69, 0.72)  53.65%,
     rgba(62, 56, 56, 0.42) 100%
   ); // cor em degrade
 
