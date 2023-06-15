@@ -16,15 +16,26 @@ export default function App() {
   }, []);
 
 
-  const [color, setColor] = useState('yellow') 
+  const [color, setColor] = useState('#53ac59') 
 
   function getColors() {
-    const array = ['#19b5a5', '#ff0048', '#5e5473', '##a9f04d'];
+    const array = ['#19b5a5', '#ff0048', '#331d4a', '#2d6073', '#aee637', '#cb6f84', '#ff714b'];
     const randomNumber = Math.floor(Math.random() * array.length); 
     const result = array[randomNumber]; 
     setColor(result)
 
 } 
+
+
+// -------------------------------------
+//*EXEMPLO e EXPLICAÇÃO de UseState
+
+
+// const [number, SetNumber] = useState(0) 
+// function handleCounter() {
+//     SetNumber(number + 1)
+// }
+
 
 
   return (
@@ -90,6 +101,9 @@ export default function App() {
 
         <Botao onClick={getColors}>Gerar background
         </Botao>
+
+        {/* <p>{number}</p>
+        <button onClick={handleCounter}>contar numero</button> */}  
 
       </section>
     </Container>

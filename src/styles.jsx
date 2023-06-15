@@ -123,7 +123,7 @@ export const Article = styled.article`
       width: 355px;
       height: 350px;
       border-radius: 100%;
-      border: 10px solid #8257e5;
+      border: 10px solid ${(props) => props.borderColor}; 
     }
   }
 `;
