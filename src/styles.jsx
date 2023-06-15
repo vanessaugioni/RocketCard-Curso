@@ -70,7 +70,7 @@ export const Article = styled.article`
   background: #1e1e1e;
   border-radius: 50px;
   border-style: solid;
-  border-color: ${(props) => props.borderColor}; 
+  border-color: ${(props) => props.borderColor}; // Propriedade que possui o valor gerado pelo useState; 
   border-top-width: 27px;
   border-bottom-width: 27px;
   border-left-width: 15px;
@@ -123,7 +123,7 @@ export const Article = styled.article`
       width: 355px;
       height: 350px;
       border-radius: 100%;
-      border: 10px solid ${(props) => props.borderColor}; 
+      border: 10px solid ${(props) => props.borderColor}; // Propriedade que possui o valor gerado pelo useState; 
     }
   }
 `;

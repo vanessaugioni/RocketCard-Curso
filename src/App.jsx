@@ -28,8 +28,7 @@ export default function App() {
 
 
 // -------------------------------------
-//*EXEMPLO e EXPLICAÇÃO de UseState
-
+//*EXEMPLO de useState
 
 // const [number, SetNumber] = useState(0) 
 // function handleCounter() {
